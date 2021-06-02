@@ -1,7 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import './style.scss';
-import { FacebookOutlined, GooglePlusOutlined } from '@ant-design/icons';
 import { GoogleLogin } from 'react-google-login';
 import Facebook from './RegisterFace/Facebook';
 function Register() {
