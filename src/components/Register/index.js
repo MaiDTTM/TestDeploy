@@ -5,7 +5,7 @@ import { GoogleLogin } from 'react-google-login';
 import Facebook from './RegisterFace/Facebook';
 function Register() {
     const responseGoogle = (response) => {
-        console.log(response);
+        console.log('response', response);
     };
     return (
         <div style={{ backgroundImage: 'url("https://www.teahub.io/photos/full/103-1031614_cosmetics-wallpapers-wallpapers-html-code-beautiful-background-make.jpg")' }}>
@@ -35,12 +35,6 @@ function Register() {
                                     <div style={{ width: '48%', marginLeft: 5, height: '2.5rem', margin: '0.3125rem' }}>
                                         <GoogleLogin clientId='326538060414-5vqrgaosddu857h2siom011r796tfl4j.apps.googleusercontent.com' buttonText='Login' onSuccess={responseGoogle} onFailure={responseGoogle} />
                                     </div>
-                                    {/*<button className='register__content--container__option--item btn' style={{ backgroundColor: '#1877f2', opacity: 5 }}>*/}
-                                    {/*    <div className='BnBJFp _3RUHTS'>*/}
-                                    {/*        <GooglePlusOutlined style={{ width: '2.25rem', height: '2.25rem', fontSize: '1.875rem' }} />*/}
-                                    {/*        <div className='_1DQYn2'>Google</div>*/}
-                                    {/*    </div>*/}
-                                    {/*</button>*/}
                                 </div>
                             </div>
                             <div className='register__content--container__footer'>

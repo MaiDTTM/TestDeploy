@@ -47,7 +47,7 @@ export default class Facebook extends Component {
                 </div>
             );
         } else {
-            fbContent = <FacebookLogin appId='100011218545977' autoLoad={true} fields='name,email,picture' onClick={this.componentClicked} callback={this.responseFacebook} icon='fa-facebook' />;
+            fbContent = <FacebookLogin appId='168962168507958' autoLoad={true} fields='name,email,picture' onClick={this.componentClicked} callback={this.responseFacebook} icon='fa-facebook' />;
         }
         return <div>{fbContent}</div>;
     }
