@@ -1,12 +1,9 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import './style.scss';
-import { GoogleLogin } from 'react-google-login';
 import Facebook from './RegisterFace/Facebook';
+import Google from './RegisterGG/Google';
 function Register() {
-    const responseGoogle = (response) => {
-        console.log('response', response);
-    };
     return (
         <div style={{ backgroundImage: 'url("https://www.teahub.io/photos/full/103-1031614_cosmetics-wallpapers-wallpapers-html-code-beautiful-background-make.jpg")' }}>
             <form style={{ display: ' block', marginTop: '0em', height: '100%' }}>
@@ -32,8 +29,8 @@ function Register() {
                                     <div>
                                         <Facebook />
                                     </div>
-                                    <div style={{ width: '48%', marginLeft: 5, height: '2.5rem', margin: '0.3125rem' }}>
-                                        <GoogleLogin clientId='326538060414-5vqrgaosddu857h2siom011r796tfl4j.apps.googleusercontent.com' buttonText='Login' onSuccess={responseGoogle} onFailure={responseGoogle} />
+                                    <div>
+                                        <Google />
                                     </div>
                                 </div>
                             </div>
